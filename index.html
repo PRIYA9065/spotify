@@ -1,194 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div id="main">
-        <div id="sidebar">
-            <img id="image" src="./assets/Spotify logo.svg">
-            <div class="d1">
-                <img src="./assets/home1.svg">
-                <h2 class="text">Home</h2>
-            </div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
 
-            <div class="d1">
-                <img src="./assets/fi-rs-search.svg">
-                <h2 class="text">Search</h2>
-            </div>
+    <title>Spotify-Clone</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-nav">
+        <img src="./assets/Spotify logo.svg" alt="" class="logo" />
 
-            <div class="d1">
-                <img src="./assets/lib.svg">
-                <h2 class="text">Your library</h2>
-            </div>
+        <div class="home-container">
+          <div class="home active">
+            <img src="./assets/home1.svg" alt="" class="leftnavimg" />
+            <h2 class="leftnavh2">Home</h2>
+          </div>
 
-            <div class="d1">
-                <img src="./assets/fi-ss-plus-small.svg">
-                <h2 class="text">Create Playlist</h2>
-            </div>
+          <div class="search">
+            <img src="./assets/fi-rs-search.svg" alt="" class="leftnavimg" />
+            <h2 class="leftnavh2">Search</h2>
+          </div>
 
-            <div class="d1">
-                <img src="./assets/Group 2.svg">
-                <h2 class="text">Liked songs</h2>
-            </div>
-
-            <div class="d1">
-                <img src="./assets/gg_media-podcast.svg">
-                <h2 class="text">Your Episodes</h2>
-            </div>
-
-            <h2 class="text">FAV</h2>
-            <h2 class="text">Daily Mix 1</h2>
-            <h2 class="text">Discover Weekly</h2>
-            <h2 class="text">Malayalam</h2>
-            <h2 class="text">Dance/ElectronixMix</h2>
-            <h2 class="text">EDM/popular</h2>
-            <button><img src="./assets/Install App.svg"></button>
-        </div>
-        <div id="half">
-            <span id="main2">
-                <div id="head">
-                    <span id="arrow">
-                        <div>
-                            <img id="arrow1" href="./assets/fi-rr-angle-small-left.svg">
-                        </div>
-                        <div>
-                            <img id="arrow2" href="./assets/Vector.svg">
-                        </div>
-                    </span>
-
-                    <span id="head2">
-                        <button id="a3"><img src="./assets/Ellipse 3.svg">Angel<img src="./assets/fi-ss-caret-down.svg"></button>
-                    </span>
-                </div>
-            </span>
-
-            <span id="head2">
-                <img id="imgangle" src="./assets/Ellipse 3.svg">
-                <select id="Angle">
-                    <option>Angel</option>
-                </select>
-            </span>
+          <div class="library">
+            <img src="./assets/lib.svg" alt="" class="leftnavimg" />
+            <a href="playlist.html">Your library</a>
+          </div>
         </div>
 
-        <h1 id="morning" class="text">Good Morning</h1>
-        <div id="pic1">
-            <span>
-                <img src="./assets/Group 1.svg">
-                <h2 id="texta" class="text1"><a href="#">Liked Songs</a></h2>
-            </span>
+        <div class="playlist-container">
+          <div class="playlist">
+            <img src="./assets/fi-ss-plus-small.svg" alt="" class="leftnavimg" />
+            <a href="playlist.html">Create Playlist</a>
+          </div>
 
-            <span>
-                <img src="./assets/Rectangle 2.svg">
-                <h2 id="textb" class="text1">Neffex Playlist</h2>
-            </span>
+          <div class="liked-songs">
+            <img src="./assets/Group 2.svg" alt="" class="leftnavimg" />
+            <h2 class="leftnavh2">Liked Songs</h2>
+          </div>
 
-            <span id="spanc">
-                <img src="./assets/K/Group 1.svg">
-                <h2 id="textc" class="text1">K/DA</h2>
-            </span>
+          <div class="episodes">
+            <img src="./assets/gg_media-podcast.svg" alt="" class="leftnavimg" />
+            <h2 class="leftnavh2">Your Episodes</h2>
+          </div>
+        </div>
+        <div class="fav-tags mb-9">
+          <h2 class="leftnavh2 h">FAV</h2>
+          <h2 class="leftnavh2">Daily Mix 1</h2>
+          <h2 class="leftnavh2">Discover Weekly</h2>
+          <h2 class="leftnavh2">Malayalam</h2>
+          <h2 class="leftnavh2">Dance/Electronix Mix</h2>
+          <h2 class="leftnavh2">EDM/Popular</h2>
+        </div>
+        <div class="install">
+          <img src="./assets/grommet-icons_install-option.png" alt="" class="dwn" />
+          <h2 class="leftnavh2">Install App</h2>
+        </div>
+      </div>
 
-            <span> 
-                <img id="textd" src="./assets/4.svg">
-                <h2 class="text1">Dance/Electronix Mix</h2>
-            </span>
+      <div class="right-part">
+        <div class="nav">
+          <div class="left-right">
+            <img src="./assets/fi-rr-angle-small-left.svg" alt="" class="play" />
+            <img src="./assets/Vector.svg" alt="" class="play" />
+          </div>
+
+          <div class="profile">
+            <img src="./assets/Ellipse 3.svg" alt="" />
+            <h3>Priya</h3>
+            <img src="./assets/fi-ss-caret-down.svg" alt="" />
+          </div>
         </div>
 
-        <div id="main3">
-            <div id="allcont">
-                <h2 id="like" clsss="text">Shows you may likes</h2>
-                <p id="all" class="text">SEE ALL</p>
+        <!-- Good Morning section -->
+
+        <div class="goodmrng">
+          <h1>Good Morning</h1>
+          <div class="likedcardholder">
+            <div class="likedcards">
+              <img src="./assets/Group 1.svg" alt="" />
+              <h2>Liked Songs</h2>
             </div>
 
-            <div id="pic2">
-                <div>
-                    <img src="./assets/p1.svg">
-                    <h3 class="text">Weekly Motivatio...</h3>
-                    <h5 class="text">Ben Ina Scott</h5>
-                </div>
-
-                <div>
-                    <img src="./assets/p2.svg">
-                    <h3 class="text">MEDITATION SELF</h3>
-                    <h5 class="text">Ibn Hussain Aleen</h5>
-                </div>
-
-                <div>
-                    <img src="./assets/p3.svg">
-                    <h3 class="text">Words beyond act...</h3>
-                    <h5 class="text">Samuel Scott</h5>
-                </div>
-
-                <div>
-                    <img src="./assets/p4.svg">
-                    <h3 class="text">The Alexa Show</h3>
-                    <h5 class="text">Adriana Tom</h5>
-                </div>
-
-                <div>
-                    <img src="./assets/p4.svg">
-                    <h3 class="text">The Alexa Show</h3>
-                    <h5 class="text">Adriana Tom</h5>
-                </div>
-
-                <div>
-                    <img src="./assets/p4.svg">
-                    <h3 class="text">The Alexa Show</h3>
-                    <h5 class="text">Adriana Tom</h5>
-                </div>
-
-                <div>
-                    <img src="./assets/p4.svg">
-                    <h3 class="text">The Alexa Show</h3>
-                    <h5 class="text">Adriana Tom</h5>
-                </div>
-
-                <div>
-                    <img src="./assets/p4.svg">
-                    <h3 class="text">The Alexa Show</h3>
-                    <h5 class="text">Adriana Tom</h5>
-                </div>
-
-                
-
-
+            <div class="likedcards">
+              <img src="./assets/Rectangle 2.svg" alt="" />
+              <h2>Neffex Playlist</h2>
             </div>
+
+            <div class="likedcards">
+              <img src="./assets/kda.svg" alt="" />
+              <h2>K/DA</h2>
+            </div>
+            <div class="likedcards">
+              <img src="./assets/img4.svg" alt="" />
+              <h2>Dance/Electronix Mix</h2>
+            </div>
+          </div>
         </div>
-        <div id="footer">
-           <div id="bottom-left">
-            <img id="neffex" src="./assets/Rectangle 20.svg">
 
-            <div>
-                <h3>Dreaming on</h3>
-                <p>NEFFEX</p>
+        <!-- Shows you might like -->
+
+        <div class="shows">
+          <div>
+            <h1>Shows you might like</h1>
+            <a href="playlist.html">See all</a>
+          </div>
+
+          <div class="showsCards">
+            <div class="showCard">
+              <img src="./assets/p1.svg" alt="" />
+              <h2>Weekly Motivatio...</h2>
+              <p>Ben Ina Scott</p>
+            </div>
+            <div class="showCard">
+              <img src="./assets/p2.svg" alt="" />
+              <h2>MEDITATION SELF</h2>
+              <p>Ibn Hussain Aleen</p>
             </div>
 
-            <img id="heart" src="./assets/bx_bxs-heart.svg">
-           </div>
-
-           <div id="foot2">
-            <div id="foot21">
-                <img class="fc" src="./assets/raphael_shuffle.svg">
-                <img class="fc" src="./assets/bx_bx-skip-previous.svg">
-                <img id="footmid" src="./assets/gridicons_play.svg">
-                <img class="fc" src="./assets/bx_bx-skip-previous (1).svg">
-                <img class="fc" src="./assets/fluent_arrow-repeat-all-20-regular.svg">
+            <div class="showCard">
+              <img src="./assets/p3.svg" alt="" />
+              <h2>Weekly Motivatio...</h2>
+              <p>Ben Ina Scott</p>
             </div>
-            <img id="foot22" src="./assets/Rectangle 18.svg">
-           </div>
+            <div class="showCard">
+              <img src="./assets/p4.svg" alt="" />
+              <h2>MEDITATION SELF</h2>
+              <p>Ibn Hussain Aleen</p>
+            </div>
 
-           <div id="foot3">
-            <img src="./assets/ph_microphone-stage.svg">
-            <img src="./assets/carbon_query-queue.svg">
-            <img src="./assets/carbon_laptop.svg">
-            <img src="./assets/fluent_speaker-2-24-regular.svg">
-            <img src="./assets/Rectangle 17.svg">
-            <img src="./assets/tabler_arrows-diagonal.svg">
-           </div>
+            <div class="showCard">
+                <img src="./assets/p4.svg" alt="" />
+                <h2>MEDITATION SELF</h2>
+                <p>Ibn Hussain Aleen</p>
+              </div>
+
+              <div class="showCard">
+                <img src="./assets/p4.svg" alt="" />
+                <h2>MEDITATION SELF</h2>
+                <p>Ibn Hussain Aleen</p>
+              </div>
+
+              <div class="showCard">
+                <img src="./assets/p4.svg" alt="" />
+                <h2>MEDITATION SELF</h2>
+                <p>Ibn Hussain Aleen</p>
+              </div>
+
+              <div class="showCard">
+                <img src="./assets/p4.svg" alt="" />
+                <h2>MEDITATION SELF</h2>
+                <p>Ibn Hussain Aleen</p>
+              </div>
+
+              <div class="showCard">
+                <img src="./assets/p4.svg" alt="" />
+                <h2>MEDITATION SELF</h2>
+                <p>Ibn Hussain Aleen</p>
+              </div>
+
+              <div class="showCard">
+                <img src="./assets/p4.svg" alt="" />
+                <h2>MEDITATION SELF</h2>
+                <p>Ibn Hussain Aleen</p>
+              </div>
+            
+            </div>
+            
+          </div>
         </div>
+      </div>
     </div>
-</body>
+
+    <!--Player Controls part Bottom-->
+    <div class="wrapper">
+      <div class="bottom">
+        <div class="songName">
+          <img src="./assets/Rectangle 20.svg" alt="" />
+          <div>
+            <h2>Dreaming On</h2>
+            <p>NEFFEX</p>
+          </div>
+          &#128154;
+        </div>
+
+        <div class="playControls">
+          <div class="control">
+            <img class="musichov" src="./assets/raphael_shuffle.svg" alt="shuffle" />
+            <img class="musichov" src="./assets/bx_bx-skip-previous.svg" alt="backward" />
+            <img
+              class="musichov play"
+              src="./assets/gridicons_play.svg"
+              alt="play/pause"
+            />
+            <img class="musichov" src="./assets/bx_bx-skip-previous (1).svg" alt="forward" />
+            <img class="musichov" src="./assets/fluent_arrow-repeat-all-20-regular.svg" alt="loop" />
+          </div>
+          <div class="bar">
+            <p>2:11</p>
+            <img class="music-bar" src="./assets/Rectangle 18.svg" alt="" />
+            <p>2:42</p>
+          </div>
+        </div>
+        <div class="media-play">
+          <img class="musichov play" src="./assets/" alt="play/pause" />
+        </div>
+
+        <div class="volume">
+          <img class="vol" src="./assets/ph_microphone-stage.svg" alt="" />
+          <img class="vol" src="./assets/carbon_query-queue.svg" alt="" />
+          <img class="vol" src="./assets/carbon_laptop.svg" alt="" />
+          <img class="vol" src="./assets/fluent_speaker-2-24-regular.svg" alt="" />
+          <img src="./assets/Rectangle 17.svg" alt="" />
+          <img class="black-spek" src="./assets/tabler_arrows-diagonal.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="green-notice">
+        <img src="./assets/fluent_speaker-2-24-regular.svg" alt="" />
+        <h2>Listening on ASUS-ROG-G531GT</h2>
+      </div>
+
+      <div class="home-container-media">
+        <div class="home-media">
+          <img src="assets/Home.png" alt="" />
+          <a class="h" href="#">Home</a>
+        </div>
+
+        <div class="search-media">
+          <img src="assets/Search.png" alt="" />
+          <a href="#">Search</a>
+        </div>
+
+        <div class="library-media">
+          <img src="assets/Your library.png" alt="" />
+          <a href="playlist.html">Your Library</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
